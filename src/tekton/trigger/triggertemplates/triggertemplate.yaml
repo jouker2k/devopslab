@@ -44,8 +44,8 @@ spec:
         - name: pathToYamlFile
           value: "src/tekton/basic/knative/hello.yaml"
         - name: imageUrl
-          value: us.icr.io/<NAMESPACE>/hello
+          value: 192.168.56.10:5000/jouker2k/hello
         - name: imageTag
           value: $(params.gitrevision)
-      serviceAccount: pipeline-account
+      serviceAccountName: pipeline-account
 
