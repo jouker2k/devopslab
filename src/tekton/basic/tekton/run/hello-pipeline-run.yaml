@@ -8,12 +8,12 @@ spec:
   resources:
     - name: git-source
       resourceRef:
-        name: hello-git
+        name: hello-git-repo
   params:
     - name: pathToYamlFile
       value: "src/tekton/basic/knative/hello.yaml"
     - name: imageUrl
-      value: us.icr.io/<NAMESPACE>/hello
+      value: 192.168.56.10:5000/jouker2k/hello
     - name: imageTag
       value: "1.0"
-  serviceAccount: pipeline-account
+  serviceAccountName: pipeline-account

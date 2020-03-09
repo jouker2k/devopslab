@@ -21,7 +21,7 @@ spec:
         default: "latest"
   steps:
     - name: build-and-push
-      image: gcr.io/kaniko-project/executor
+      image: gcr.azk8s.cn/kaniko-project/executor:debug
       command:
         - /kaniko/executor
       args:

@@ -1,11 +1,11 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
-  name: hello-git
+  name: hello-git-repo
 spec:
   type: git
   params:
     - name: revision
       value: master
     - name: url
-      value: https://github.com/<your-git-account>/devopslab
+      value: https://github.com/jouker2k/devopslab
